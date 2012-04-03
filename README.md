@@ -60,6 +60,12 @@ Then you have to mount the route in `routes.rb`
 
 You can now access it at e.g. http://localhost:3000/neo-viz.
 
+When precompiling, you may need to specify these files manually
+
+    # production.rb
+    config.assets.precompile += %w( jquery-1.6.1.min.js arbor.js neo-viz.js neo-viz.css )
+
+
 ## Neo4j Database
 
 The standalone version expects a `db` directory containing the usual
